@@ -17,3 +17,11 @@ console.log(diceImage2);
 diceImage1.setAttribute("src" , "./images/" + dice1);
 diceImage2.setAttribute("src" , "./images/" + dice2);
 console.log(diceImage2);
+
+if (randomNumber1 > randomNumber2) {
+    console.log("Player 1 wins");
+} else if (randomNumber1 < randomNumber2) {
+    console.log("Play 2 wins");
+}else {
+    console.log("Tied");
+}
