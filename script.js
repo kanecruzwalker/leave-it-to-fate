@@ -18,10 +18,23 @@ diceImage1.setAttribute("src" , "./images/" + dice1);
 diceImage2.setAttribute("src" , "./images/" + dice2);
 console.log(diceImage2);
 
+// retrieve header thtml tag
+var header = document.querySelector("h1");
+console.log(header);
+
 if (randomNumber1 > randomNumber2) {
-    console.log("Player 1 wins");
+    // modify header tag
+    header.innerHTML = "🚩Player 1 wins";
+
 } else if (randomNumber1 < randomNumber2) {
-    console.log("Play 2 wins");
+    header.innerHTML = "Player 2 wins🚩";
+
 }else {
-    console.log("Tied");
+    header.innerHTML = "Tied";
+
 }
+
+
+
+
+
