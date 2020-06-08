@@ -1,6 +1,6 @@
 // Random Number 1 & 2
-var randomNumber1 = Math.floor(Math.round(Math.random()*6));
-var randomNumber2 = Math.floor(Math.round(Math.random()*6));
+var randomNumber1 = Math.floor((Math.random()*6) + 1);
+var randomNumber2 = Math.floor(Math.random()*6 + 1);
 
 // Dice Image lable
 var dice1 = "dice" + randomNumber1 + ".png"
